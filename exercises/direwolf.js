@@ -7,8 +7,8 @@ class Direwolf {
     this.huntsWhiteWalkers = true;
   }
   protect(stark) {
-    if (this.starksToProtect.length < 2 && this.home === stark.location) {
       this.huntsWhiteWalkers = false;
+    if (this.starksToProtect.length < 2 && this.home === stark.location) {
       stark.safe = true;
       this.starksToProtect.push(stark)
     }
